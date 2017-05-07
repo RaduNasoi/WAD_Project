@@ -30,9 +30,14 @@ public class loginController extends HttpServlet {
         String username = request.getParameter("login");
         System.out.println("user:----------------> "+ username);
         String password = request.getParameter("password");
+<<<<<<< HEAD
         String position = request.getParameter("hidden");
         usersDAO u = new usersDAO();
         user n = new user(username, password, position);
+=======
+        usersDAO u = new usersDAO();
+        user n = new user(username, password);
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
        
         if(u.userExists(n) == true) {
             
@@ -41,7 +46,11 @@ public class loginController extends HttpServlet {
             session.setAttribute("username", username);
             RequestDispatcher rd = request.getRequestDispatcher("menu.jsp");
             rd.forward(request, response);
+<<<<<<< HEAD
 
+=======
+System.out.println("ssssssssss");
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
         }
         else {
             System.out.println("You must login first!!!");

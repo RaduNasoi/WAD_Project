@@ -45,6 +45,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
+<<<<<<< HEAD
       out.write("<!--\n");
       out.write("To change this license header, choose License Headers in Project Properties.\n");
       out.write("To change this template file, choose Tools | Templates\n");
@@ -76,6 +77,16 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("    </div>\n");
       out.write("</body>\n");
+=======
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Login</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <h1>Hello World!</h1>\n");
+      out.write("    </body>\n");
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

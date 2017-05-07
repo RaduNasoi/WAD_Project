@@ -40,6 +40,7 @@ public class RegistrationController extends HttpServlet {
         String repeteadPassword = request.getParameter("rpassword");
         System.out.println("pass="+password);
         System.out.println("repeat="+repeteadPassword);
+<<<<<<< HEAD
         String position = request.getParameter("hidden");
         System.out.println("pos= "+ position);
         
@@ -49,6 +50,14 @@ public class RegistrationController extends HttpServlet {
             HttpSession session = request.getSession();
             username = (String)request.getParameter("username");
 
+=======
+        
+        usersDAO usersDAO = new usersDAO();
+        user user = new user(username, password);
+        if(password.equals(repeteadPassword)&& usersDAO.RegisterUser(user)==true){
+            HttpSession session = request.getSession();
+            username = (String)request.getParameter("username");
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
             session.setAttribute("username", username);
             System.out.println("username--------------> "+ username);
             RequestDispatcher rd = request.getRequestDispatcher("login.jsp");

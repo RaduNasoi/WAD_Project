@@ -37,8 +37,13 @@ public class usersDAO {
         Connection con=DBConnection.getConnection();
         Statement st = con.createStatement();
         try { 
+<<<<<<< HEAD
             String sql = "INSERT INTO APP.USERS  " + 
                 "VALUES ("+"'"+u.getUsername()+"'"+","+ "'"+u.getPassword()+"'"+","+"'"+u.getPos()+"'" +")";
+=======
+            String sql = "INSERT INTO APP.USERS " + 
+                "VALUES ("+"'"+u.getUsername()+"'"+","+ "'"+u.getPassword()+"'" +")";
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
             System.out.println(sql); 
            st.executeUpdate(sql);
             System.out.println("");

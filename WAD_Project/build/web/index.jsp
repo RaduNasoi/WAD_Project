@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<<<<<<< HEAD
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <title>Xing yang</title>
     </head>
@@ -29,5 +30,15 @@
         <a href="login.jsp"> <b>Login<b> </a>
         <br>
         <a href='viewProducts.jsp'><b> View menu</b> </a>
+=======
+        <title>Xing yang</title>
+    </head>
+    <body>
+        <h2>Xing Yang - Restaurant cu specific</h2>
+        <br>
+        <a href="Registration.jsp"><b> Make an account</b> </a>
+        <br>
+        <a href="login.jsp"> <b>Login<b> </a>
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
     </body>
 </html>

@@ -20,6 +20,7 @@
         <servlet-name>loginController</servlet-name>
         <url-pattern>/loginController</url-pattern>
     </servlet-mapping>
+<<<<<<< HEAD
     
         <servlet>
         <servlet-name>buyController</servlet-name>
@@ -48,6 +49,8 @@
         <url-pattern>/LogoutController</url-pattern>
     </servlet-mapping>
     
+=======
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
     <session-config>
         <session-timeout>
             30

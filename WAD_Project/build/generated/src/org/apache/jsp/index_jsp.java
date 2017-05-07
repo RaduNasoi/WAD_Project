@@ -48,6 +48,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+<<<<<<< HEAD
       out.write("        <link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\"/>\n");
       out.write("        <title>Xing yang</title>\n");
       out.write("    </head>\n");
@@ -68,6 +69,16 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <a href=\"login.jsp\"> <b>Login<b> </a>\n");
       out.write("        <br>\n");
       out.write("        <a href='viewProducts.jsp'><b> View menu</b> </a>\n");
+=======
+      out.write("        <title>Xing yang</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <h2>Xing Yang - Restaurant cu specific</h2>\n");
+      out.write("        <br>\n");
+      out.write("        <a href=\"Registration.jsp\"><b> Make an account</b> </a>\n");
+      out.write("        <br>\n");
+      out.write("        <a href=\"login.jsp\"> <b>Login<b> </a>\n");
+>>>>>>> 60ec931fe0292a9faa61ef4c99663e8ddeaf9743
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
