@@ -27,12 +27,20 @@ public class loginController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
+        char[] chars;
         String username = request.getParameter("login");
         System.out.println("user:----------------> "+ username);
-        String password = request.getParameter("password");
+        String npassword = request.getParameter("password");
         String position = request.getParameter("hidden");
+        
+        chars = npassword.toCharArray();
+        for(int i=0;i<chars.length;i++){
+        chars[i]=(char) (chars[i]+10);
+        }
+        String epassword = String.copyValueOf(chars);
+        
         usersDAO u = new usersDAO();
-        user n = new user(username, password, position);
+        user n = new user(username, epassword, position);
        
         if(u.userExists(n) == true) {
             

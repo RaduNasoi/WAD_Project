@@ -16,7 +16,7 @@
     <body>
                
         <h1>History: </h1>
-        <form action="viewProducts.jsp"><input type="submit" name="commit" id="product_view_form" value="Back"/></form>
+        <form action="menu.jsp"><input type="submit" name="commit" id="product_view_form" value="Back"/></form>
 
                     
                     <br>

@@ -55,7 +55,7 @@ public class LogoutController extends HttpServlet {
             out.println("<br>");
             out.println("<a href='login.jsp' id='login_button' style='margin-left: 0px;'> Login </a>");
             out.println("<br>");
-            out.println("<a href='viewProducts.jsp' id='login_button' style='margin-left: 0px;'> View Menu </a>");
+            out.println("<a href='menu.jsp' id='login_button' style='margin-left: 0px;'> View Menu </a>");
             out.println("</body>");
             out.println("</html>");
         }

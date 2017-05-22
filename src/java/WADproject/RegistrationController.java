@@ -35,17 +35,23 @@ public class RegistrationController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
+        char[] chars ;
         String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String npassword = request.getParameter("password");
         String repeteadPassword = request.getParameter("rpassword");
-        System.out.println("pass="+password);
+        System.out.println("pass="+npassword);
         System.out.println("repeat="+repeteadPassword);
         String position = request.getParameter("hidden");
         System.out.println("pos= "+ position);
-        
+        chars = npassword.toCharArray();
+        for(int i=0;i<chars.length;i++){
+        chars[i]=(char) (chars[i]+10);
+        }
+        String epassword = String.copyValueOf(chars);
+        System.out.println(""+epassword);
         usersDAO usersDAO = new usersDAO();
-        user user = new user(username, password, position);
-        if(password.equals(repeteadPassword)&& usersDAO.RegisterUser(user)==true){
+        user user = new user(username, epassword, position);
+        if(npassword.equals(repeteadPassword)&& usersDAO.RegisterUser(user)==true){
             HttpSession session = request.getSession();
             username = (String)request.getParameter("username");
 

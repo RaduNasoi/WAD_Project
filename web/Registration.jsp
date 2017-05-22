@@ -30,13 +30,13 @@ and open the template in the editor.
         </div>
         <nav>
             <ul>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="login.jsp">Login</a></li>
+                <li><b><a href="index.jsp" >Home</a></b></li>
+                <li><b><a href="login.jsp" >Login</a></b></li>
             </ul>
         </nav>
               
             <form method="post" action="RegistrationController" class="form_register"> 
-                <h1 id="register_h1_page">Registration form</h1> 
+                <h1 id="register_h1_page">Register</h1> 
                 <div class="form-element">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" size="40">

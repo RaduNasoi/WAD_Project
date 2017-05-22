@@ -25,7 +25,7 @@
         
         <a href="login.jsp" id="login_button"> <b>Login<b> </a>
         
-        <a href='viewProducts.jsp' id="login_button"><b> View menu</b> </a>
+        <a href='menu.jsp' id="login_button"><b> View menu</b> </a>
         </div>
     </body>
 </html>

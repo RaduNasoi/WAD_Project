@@ -16,7 +16,7 @@
     <body>
         <div>     
            
-           <a href="LogoutController" id="log_out"> Logout </a>
+       
             <form method="post" action="buyController" style="padding-left: 20px; width: 600px;" class="new_menu_b">
                 <%
               
@@ -24,7 +24,7 @@ String user=(String)session.getAttribute("username");
 
 if(user!=null){     
                     %>
-                   
+                       <a href="LogoutController" id="log_out"> Logout </a>
                     <br>
                    
                        
@@ -49,12 +49,23 @@ else{
 
 %>
  
- <c:forEach var="product" items="${applicationScope.productLists}">
-                    <c:out value="${product.toString()}"/>
+             <br>
+                   
+                       
+                    <p style="font-size: 18px; color: #880000;" id="test_b">Name  </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b">Weight </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b"> Price </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b"> Quantity</p>
+                    <c:forEach var="product" items="${applicationScope.productLists}">
+                    <p id="test_b"><c:out value="${product.getName()}  "/></p>
+                    <p id="test_b"> <c:out value="   ${product.getWeight()} "/></p>
+                    <p id="test_b">  <c:out value=" ${product.getPrice()}"/></p>
+                    <input type="text" name="quantity_${product.getID()}" value=""  placeholder="Quantity" disabled /><br>
                     <af:outputText value="${msg.TCW_SELECT_PART_ANALYSIS}" />
-                    <br />
+                    
                 </c:forEach>
-                    <a href="login.jsp"> Login </a>
+                    <a href="login.jsp" id="login_button"> Login </a>
+                    <a href="Registration.jsp" id="login_button"><b> Register</b> </a>
                     <br>
     <%}%>
             </form>
