@@ -1,5 +1,13 @@
-body {height:100%; width:960px; margin-left: auto; margin-right: auto;
-
+html{
+    font-family: Arial!important;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    background-image: url("http://cdn.wallpapersafari.com/53/72/RaJ6Ap.jpg");
+        background-size: cover;
+    margin-right: auto;
 }
 
 
@@ -27,4 +35,238 @@ h1 {
 .form-element {
 margin-top:10px;
 margin-bottom:10px;
+}
+#head_logo{
+    font-family: arial;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #880000;
+}
+#index_photo{
+    display: block;
+    margin: auto;
+}
+#login_button{
+    background: url(https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png) no-repeat 5px 5px #484B4F;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px 10px 0;
+    color: White;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 40px;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: all;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: .4s;
+    -moz-transition-property: all;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+nav{
+            width: 252px;
+    /* float: left; */
+    margin: auto;
+}
+.form_register{
+        width: 306px;
+    display: block;
+    margin: auto;
+    margin-top: 28px;
+}
+label{
+        width: 130px;
+    display: block;
+    float: left;
+}
+input{
+    width: 300px;
+}
+#register_h1_page{
+    text-align: center;
+}
+
+.form-element222 input{
+     width: 100px;
+    margin: auto;
+    height: 28px;
+    /* position: relative; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 1.6em 1em; */
+    /* max-width: 20em; */
+    color: #fff;
+    /* font-size: 1em; */
+    /* line-height: 1; */
+    text-align: center;
+    text-decoration: none;
+    background-color: #2da3ee;
+}
+#content a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+#img_logo_b{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+nav a{
+        text-decoration: none;
+       color: green;
+    font-size: 20px;
+}
+#go_login{
+    width: 100px;
+    margin: auto;
+    height: 28px;
+    /* position: relative; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 1.6em 1em; */
+    /* max-width: 20em; */
+    color: #fff;
+    /* font-size: 1em; */
+    /* line-height: 1; */
+    text-align: center;
+    text-decoration: none;
+    background-color: #2da3ee;
+}
+#log_out{
+        width: 100px;
+        text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.view_products_b{
+           width: 550px;
+    min-width: 380px;
+    display: block;
+    float: left;
+    padding-left: 4%;
+        color: green;
+}
+.view_products_b input{
+        width: 56px;
+    float: right;
+    clear: both;
+}
+#menu_image_view{
+        float: right;
+    width: 17%;
+    padding-right: 11%;
+    min-width: 300px;
+}
+#sumbit_go_menu{
+        margin-top: 20px;
+    width: 100px;
+    /* margin: auto; */
+    height: 28px;
+    /* position: relative; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 1.6em 1em; */
+    /* max-width: 20em; */
+    color: #fff;
+    /* font-size: 1em; */
+    /* line-height: 1; */
+    /* text-align: center; */
+    text-decoration: none;
+    background-color: #2da3ee;
+        float: none;
+        
+}
+#link{
+        text-decoration: none;
+    color: #880000;
+    font-size: 20px;
+}
+#product_view_form{
+    width: 100px;
+    /* margin: auto; */
+    height: 28px;
+    /* position: relative; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 1.6em 1em; */
+    /* max-width: 20em; */
+    color: #fff;
+    /* font-size: 1em; */
+    /* line-height: 1; */
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #2da3ee;
+}
+#menu_go_b{
+    margin-top: 20px;
+    width: 100px;
+    /* margin: auto; */
+    height: 28px;
+    /* position: relative; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 1.6em 1em; */
+    /* max-width: 20em; */
+    color: #fff;
+    /* font-size: 1em; */
+    /* line-height: 1; */
+    /* text-align: center; */
+    text-decoration: none;
+    background-color: #2da3ee;
+}
+#view_not_connected{
+    background: url(https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png) no-repeat 5px 5px #484B4F;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px 10px 0;
+    color: White;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 40px;
+    display: block;
+    /* margin: 0 auto; */
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: all;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: .4s;
+    -moz-transition-property: all;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.inline a{
+    float: left;
+}
+.inline{
+    width: 420px;
+    margin: auto;
+    margin-top: 20px;
+}
+.new_menu_b input{
+        width: 147px;
+    border: 0px;
+    border: 1px solid black;
+    padding: 0px;
+    height: 20.67px;
+}
+#test_b{
+    width: 148px;
+    float: left;
+    border: 1px solid black;
+    margin: 0px;
+    color: green;
 }

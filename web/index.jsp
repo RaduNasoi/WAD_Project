@@ -10,24 +10,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
-        <title>Xing yang</title>
+        <title>ITALIAN RESTAURANT</title>
     </head>
-    <body>
+    <body style="background: url(http://pjazza.fi/wp-content/uploads/2016/12/pjazza-italian-restaurant-background.jpg); background-size: cover;">
          <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCC0xc0jYaEdE0GYrLq1--15Pu39tTZ40U"
   type="text/javascript"></script>
-        <h3>My Google Maps Demo</h3>
-
-
-
        
-        <h2>Xing Yang - Restaurant cu specific</h2>
-        <br>
-        <img src="http://metropotam.ro/mediaserver/2/w/5.jpg"/>
-        <br>
-        <a href="Registration.jsp"><b> Register</b> </a>
-        <br>
-        <a href="login.jsp"> <b>Login<b> </a>
-        <br>
-        <a href='viewProducts.jsp'><b> View menu</b> </a>
+
+        <h2 id="head_logo">ITALIAN RESTAURANT</h2>
+       
+        
+        <div class="inline">
+        <a href="Registration.jsp" id="login_button"><b> Register</b> </a>
+        
+        <a href="login.jsp" id="login_button"> <b>Login<b> </a>
+        
+        <a href='viewProducts.jsp' id="login_button"><b> View menu</b> </a>
+        </div>
     </body>
 </html>

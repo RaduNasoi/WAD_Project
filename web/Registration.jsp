@@ -24,8 +24,9 @@ and open the template in the editor.
         
         <div id="content">
         <div class="header">
-<!--            <img src="./img/companyLogo.jpg" style="width:100px"  />-->
-            <span class="header-text">Xin Yang</span>
+            <p class="header-text">ITALIAN RESTAURANT</p>
+         
+            
         </div>
         <nav>
             <ul>
@@ -33,8 +34,9 @@ and open the template in the editor.
                 <li><a href="login.jsp">Login</a></li>
             </ul>
         </nav>
-            <h1>Registration form</h1>   
-            <form method="post" action="RegistrationController"> 
+              
+            <form method="post" action="RegistrationController" class="form_register"> 
+                <h1 id="register_h1_page">Registration form</h1> 
                 <div class="form-element">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" size="40">
@@ -99,7 +101,7 @@ and open the template in the editor.
                     <label for="spam">Subscribe to maillist</label>
                     <input type="checkbox" name="spam" id="spam"> 
                 </div> -->
-                  <div class="form-element">
+                  <div class="form-element222">
                       <input type="submit" value="Submit">
                    
                 </div> 

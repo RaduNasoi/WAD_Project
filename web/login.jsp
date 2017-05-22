@@ -17,22 +17,25 @@ and open the template in the editor.
   <link rel="stylesheet" href="style.css">
   </head>
 <body>
+              
+
     <nav>
             <ul>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="Registration.jsp">Register</a></li>
+                <li><a href="index.jsp" id="login_button">Home</a></li>
+                <li><a href="Registration.jsp" id="login_button">Register</a></li>
             </ul>
         </nav>
   <section class="container">
     <div class="login">
-      <h1>Login</h1>
-      <form method="post" action="loginController">
+      
+      <form method="post" action="loginController" class="form_register">
+          <h1>Login</h1>
         <p><input type="text" name="login" value="" placeholder="Username"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="remember_me">
    
         </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+        <p class="submit"><input type="submit" name="commit" value="Login" id="go_login"></p>
       </form>
 
     </div>

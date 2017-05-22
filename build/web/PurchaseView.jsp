@@ -16,17 +16,17 @@
     <body>
                
         <h1>History: </h1>
-        <form action="viewProducts.jsp"><input type="submit" name="commit" value="Back"/></form>
+        <form action="viewProducts.jsp"><input type="submit" name="commit" id="product_view_form" value="Back"/></form>
 
-                    <a href="LogoutController"> Logout </a>
+                    
                     <br>
                     <c:forEach var="purchase" items="${requestScope.purchaseList}">
-                    <c:out value="${purchase.toString()}"/>
+                    <p style="color: green; margin: 1px;"><c:out value="${purchase.toString()}"/></p>
                     <af:outputText value="${msg.TCW_SELECT_PART_ANALYSIS}" />
-                    <br />
+                   
                 </c:forEach>
 
   
- 
+ <a href="LogoutController" id="log_out" style="margin-top: 10px; display: block;"> Logout </a>
     </body>
 </html>

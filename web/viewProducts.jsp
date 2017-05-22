@@ -7,26 +7,27 @@
         <link rel="stylesheet" href="style.css">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body style="    background-image: url(http://www.cafeitalia.com.au/Content/images/background/restaurant.jpg);
+    background-size: cover;">
         <div>     
            
-          
-            <form method="post" action="buyController">
+          <a href="LogoutController" id="log_out"> Logout </a><br />
+            <form method="post" action="buyController" class="view_products_b">
                 <%
               
 String user=(String)session.getAttribute("username");
 if(user!=null){     
                     %>
-                    <a href="LogoutController"> Logout </a>
-                    <br>
+                    
+                    
                     <c:forEach var="product" items="${applicationScope.productLists}">
-                    <c:out value="${product.toString()}"/>
-                    <input type="text" name="quantity_${product.getID()}" value="" placeholder="Quantity" />
-                    <af:outputText value="${msg.TCW_SELECT_PART_ANALYSIS}" />
-                    <br />
+                    <c:out value="${product.toString()}" />
+                    <input type="text" name="quantity_${product.getID()}" value="" placeholder="Quantity" /><br />
+                    <af:outputText  value="${msg.TCW_SELECT_PART_ANALYSIS}" />
+                   
                 </c:forEach>
                 
-                <input type="submit" name="commit" value="Buy"/>
+                <input type="submit" id="sumbit_go_menu" name="commit" value="Buy"/>
 
                 <%}
 
@@ -39,10 +40,12 @@ else{
                     <af:outputText value="${msg.TCW_SELECT_PART_ANALYSIS}" />
                     <br />
                 </c:forEach>
-                    <a href="login.jsp"> Login </a>
+                    <a href="login.jsp" id="view_not_connected"> Login </a>
                     <br>
     <%}%>
             </form>
+           
         </div>
+            
     </body>
 </html>

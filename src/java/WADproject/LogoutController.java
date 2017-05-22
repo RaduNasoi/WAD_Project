@@ -46,15 +46,16 @@ public class LogoutController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title> LogoutController</title>");            
+            out.println("<title> LogoutController</title>");   
+            out.println("<link rel=\'stylesheet\' href=\'style.css\'>"); 
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>You have logged out </h1>");
             out.println("<h1>"+"Username: "+ request.getSession().getAttribute("username")+" </h1>");
             out.println("<br>");
-            out.println("<a href='login.jsp'> Login </a>");
+            out.println("<a href='login.jsp' id='login_button' style='margin-left: 0px;'> Login </a>");
             out.println("<br>");
-            out.println("<a href='viewProducts.jsp'> View Menu </a>");
+            out.println("<a href='viewProducts.jsp' id='login_button' style='margin-left: 0px;'> View Menu </a>");
             out.println("</body>");
             out.println("</html>");
         }

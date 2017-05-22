@@ -16,26 +16,32 @@
     <body>
         <div>     
            
-          
-            <form method="post" action="buyController">
+           <a href="LogoutController" id="log_out"> Logout </a>
+            <form method="post" action="buyController" style="padding-left: 20px; width: 600px;" class="new_menu_b">
                 <%
               
 String user=(String)session.getAttribute("username");
 
 if(user!=null){     
                     %>
-                    <a href="LogoutController"> Logout </a>
+                   
                     <br>
-                    <p>Name || Weight || Price || Quantity<p>
-                    <br>
+                   
+                       
+                    <p style="font-size: 18px; color: #880000;" id="test_b">Name  </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b">Weight </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b"> Price </p>
+                   <p style="font-size: 18px;color: #880000;" id="test_b"> Quantity</p>
                     <c:forEach var="product" items="${applicationScope.productLists}">
-                    <c:out value="${product.getName()}   ${product.getWeight()} ${product.getPrice()}"/>
-                    <input type="text" name="quantity_${product.getID()}" value="" placeholder="Quantity" />
+                    <p id="test_b"><c:out value="${product.getName()}  "/></p>
+                    <p id="test_b"> <c:out value="   ${product.getWeight()} "/></p>
+                    <p id="test_b">  <c:out value=" ${product.getPrice()}"/></p>
+                    <input type="text" name="quantity_${product.getID()}" value=""  placeholder="Quantity" /><br>
                     <af:outputText value="${msg.TCW_SELECT_PART_ANALYSIS}" />
-                    <br />
+                    
                 </c:forEach>
                 
-                <input type="submit" name="commit" value="Buy"/>
+                <input type="submit" name="commit" id="menu_go_b" value="Buy"/>
 
                 <%}
 
